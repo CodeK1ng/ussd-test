@@ -13,7 +13,7 @@ module.exports = {
       host : '41.175.8.68',
       ref  : 'origin/main',
       repo : 'https://github.com/CodeK1ng/ussd-test.git',
-      path : '/var/www/html/',
+      path : '/var/www/',
       "post-deploy" : "npm install"
     }
   }
