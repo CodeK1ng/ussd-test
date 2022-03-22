@@ -9,14 +9,12 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'SSH_USERNAME',
-      host : 'SSH_HOSTMACHINE',
-      ref  : 'origin/master',
-      repo : 'GIT_REPOSITORY',
-      path : 'DESTINATION_PATH',
-      'pre-deploy-local': '',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': ''
+      user : 'root',
+      host : '41.175.8.68',
+      ref  : 'origin/main',
+      repo : 'https://github.com/CodeK1ng/ussd-test.git',
+      path : '/var/www/html/ussd-test',
+      "post-deploy" : "npm install"
     }
   }
 };
